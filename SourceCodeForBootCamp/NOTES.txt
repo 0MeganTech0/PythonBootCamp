@@ -1,0 +1,256 @@
+Day 1 Notes (2023-08-13)
+
+Use the Command Prompt, Visual Studios, MS Powershell, or anyother you perfer to run your .py source code. 
+
+To get to the correct directory in the Command Prompt follow the bollow directions: 
+Step-1 --> Open the Command Prompt
+Step-2 --> Type in C:\Users, you should be in on the C: drive in the Users directory. 
+Step-3 --> Hit the up arrow key, which should bring up the last directory (C:\Users) and at the end enter \NameOfUser (next directory). You should be on the next directory. 
+Step-4 --> Repeat Step-3 until you are in the desired directory.
+
+ 
+
+The below are ways to CREATE and EXECUTE Python Files. 
+
+Use a IDE (Intergrated Development Environment) 
+--> CMD Prompt (command prompt)
+--> Plain Text File
+--> Notepad++
+--> VS Code
+--> Python IDE
+
+To use the CMD prompt to EXECUTE Python files:
+1-Type in the Directories one at a time.
+Example: 
+Step-1 --> Type cd C:\Users (enter)
+--> Now the user is in the 'User' directory located on the C:\ drive
+Step-2 --> Hit the up arrow key to bring up C:\Users (type cd and add the next directory) which would be C:\Users\NameOfUser (hit enter)
+--> Now the user is in the C:\Users\NameOfUser
+Continue to do this until you are at the directory where the IDE files are saved.
+Type 'python and then the file' to be executed, when you are at the desired directory.
+Example: C:\Users\NameOfUser\Bootcamp1\PythonFileToExecute.py
+
+You can use any IDE to CREATE Python commands.
+Just type python after the directory you want to be on and then enter the command. 
+To use the CMD prompt to Execute Python files:
+1-Type in the Directories one at a time.
+Example: 
+Step-1 --> C:\Users (enter)
+--> Now the user is in the 'User' directory located on the C:\ drive
+Step-2 --> Hit the up arrow key to bring up C:\Users (and add the next directory) which would be C:\Users\NameOfUser (hit enter)
+--> Now the user is in the C:\Users\NameOfUser
+
+
+I/O Funtions (Input/Output)
+To get input date from a user, we use input()
+To display date as output to a user we use print()
+
+When using an input function, there must be a variable.
+To get the variable to display, it must be a str
+
+Example: 
+name = input("Enter your name    ")
+num1 = int(input("Enter a Number    ")) #"6" to 6 There WILL be a space after Number
+num2 = int(input("Enter a Number")) #There will NOT be a space after Number
+
+print(num1)
+print(num2)
+print(name)
+print("How are you?")
+print(num1 + num2)
+print(100-75)
+print(2*25)
+
+
+Statement - is the complete instruction sentence written in a programming language, with a complete meaning.
+
+Program - is the set of instructions provided to a computer (to tell it what to do and how to do it).
+
+
+Example of Statements and the Set is the Program:
+
+print("How are you?")#1st statement
+print(100-75) #2nd statement
+name = "Megan"
+print(name)
+
+Comments: 
+Comments are remarks that neither complied not displayed to user. 
+They are for the Developers. 
+
+# is a single line comment
+'''''' is for multiple line comments
+
+Examples:
+
+print("How are you?")#1st statement-will not be complied or displayed
+print(100-75) #2nd statement-will not be complied or displayed
+name = "Megan"
+print(name)
+'''Do not allow more than 20 characters for the name
+Only the developers, current and future will be able to see this.
+'''
+
+
+Terminator - used to complete a statement, usually a semicolon is used as the statement terminator.
+           - Python doesn't need to put a semicolon at the end of a statement, ONLY when multiple statements are in a single line.
+
+Example:
+
+print("How are you?"); print("Hello Megan")
+#the semicolon above is when a semicolon is needed in python
+num1 = 100; num2 = 200; num3 = 300; num4 = 400
+print(num1 + num2 + num3 - num4)
+
+
+Indentiation - specific distance we have to manage while writing Python Code.
+We do NOT use curly braces in Python, we use indentations to separate specific blocks of code from each other. 
+
+Example:
+
+a = 100
+b = 50
+if a > b:
+        print("A is grater than b")
+        print("More than")
+else:
+            print("A is NOT grater than b")
+
+#Indentations must be the same for the statements in the block of code. 
+#The above is a three block layer.
+
+
+Reserved Words - Special word which have special meaning like if, else, for, and, or, any of the below: 
+False def if raise None del Import return True elif in try and else is while as except lambda with assert finally nonlocal yield Break for not global Class from pass continue
+
+Example: 
+
+num1 = 200
+#Can not use if, else and other words for a variable name
+print(num)
+
+
+Day 2 (2023-08-22 to 2023-08-23)
+
+Variables
+
+Variable - value may change during the program execution.
+	 - is the container which stores a value. Example: a = 2 the Variable is a.
+	 - is the identifier, you have to declare and then initialize. 
+Example: num1 - 43
+	 num2 = 212.4
+	 name = "Megan"
+	 print(name) --> will display Megan
+	 print(num1) --> will display 43
+	 print(num2) --> will display 212.4
+
+Undefined Variable - a Value that is not defined and will throw an error
+Example:
+a = 83
+name = "Megan"
+num = 23.34
+female = True
+print(a)
+#Variable a (83) should display
+print(name)
+print(num2)
+#num2 is a variable that is not defined so it will throw an error
+
+Global and Local Variables
+Global Variables - those which are NOT defined inside any function and have a Global scope.
+Local Variables - those which are defined inside a function and their scope is limited to that function ONLY. 
+Example:
+#a is for both below blocks of code - Global Variable
+#b is a local variable, only for the first block of code. 
+if a == 32:
+    b=10
+    print("A is equal to 32")
+else:
+    print("A is NOT equal to 32")
+
+print(b)
+
+
+
+Types of Variables
+
+Declaration - When we write a name of Variable According to Rules and Regulation without providing a Value is called Declaration of Variable.
+a = 4
+name = M
+
+Initialization - AFTER Declaration, you need to provide a Value to declared Variable.
+	       - Assigning a Value to a Variable is Initialization, but in Python we do NOT NEED to declare a Variable Separately. At the time of Declaration we provide the Value to the Variable.
+
+Rules to Declear a Variable - 
+EXAMPLE:
+C++ way: 
+int a;     //Declaration
+a = 10;    //Initialization
+
+Python way:
+a = 10      //Declaration and Initialization
+b = 30      //Declaration and Initialization
+
+
+NOTE: there can NOT be white space between words in Variable Names or Values.
+-canUseCamelCaseIsOkay
+-Can_User_Underscore_is_okay
+-No Special Character 
+-No Reserved Words (else, if, etc)
+-Can use numbers (abc123)
+-No Numbers at the beginning (123abc)
+-Is Case Sensitivity (name and Name is NOT the same)
+
+Data Types
+
+Mutable and Immutable Date Type - 
+
+Sequence and Non Sequence Data Type - 
+
+Python Data Type Categories - 
+
+Text Based Data Type - 
+
+Numeric or Number Data Types - 
+
+Sequence Data Type - 
+
+Mapping Data Type - 
+
+Set Data Type - 
+
+Boolean Data Type - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
